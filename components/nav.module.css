@@ -1,0 +1,23 @@
+@keyframes slideRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideClose {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.menuOpen {
+  animation: slideRight 0.3s ease forwards;
+}
+
+.menuClose {
+  animation: slideClose 0.3s ease forwards;
+}
+
+.logoImg {
+  height: 80px;
+  border-radius: 8px;
+  border: 2px solid white;
+}

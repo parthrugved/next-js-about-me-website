@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+*{
+  margin: 5px;
+  /* padding: 5px; */
+  
+}
+
+ @keyframes slideRight {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideClose {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    .menu-open {
+        animation: slideRight 0.3s ease forwards;
+    }
+
+    .menu-close {
+        animation: slideClose 0.3s ease forwards;
+    }
+    
+    .img{
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+/* header , nav{
+  margin: 0;
+  
+} */
